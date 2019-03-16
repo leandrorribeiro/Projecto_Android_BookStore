@@ -26,6 +26,7 @@
             <TextView
                 android:textAlignment="center"
                 android:gravity="center_vertical"
+                android:hint="AAA"
                 android:id="@+id/tv_nome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />

@@ -11,6 +11,7 @@ import android.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -77,6 +78,7 @@ public class ItemListFragment extends Fragment implements AdapterCallback {
             getItems();
         }
         et_pesquisa = view.findViewById(R.id.et_pesquisa);
+        et_pesquisa.setGravity(Gravity.CENTER);
         btn_pesquisar = view.findViewById(R.id.btn_pesquisar);
         btn_favorito = view.findViewById(R.id.btn_favorito);
         btn_pesquisar.setOnClickListener(new View.OnClickListener() {

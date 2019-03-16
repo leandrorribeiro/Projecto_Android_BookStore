@@ -1,6 +1,7 @@
 package com.example.projecto_android_leandroribeiro_final.adapter;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -45,6 +46,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemAdapterVie
         if(items != null){
             Item item = items.get(i);
             itemAdapterViewHolder.tvNome.setText(item.getVolumeInfo().getTitle());
+            itemAdapterViewHolder.tvNome.setTypeface(null, Typeface.BOLD);
             itemAdapterViewHolder.tvData.setText(item.getVolumeInfo().getPublishedDate());
             if (item.getVolumeInfo().getSubtitle() == null) {
                 itemAdapterViewHolder.tvSub.setVisibility(View.GONE);
@@ -65,6 +67,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemAdapterVie
         }else {
             final Favorites favorite = favorites.get(i);
             itemAdapterViewHolder.tvNome.setText(favorite.getTvNome());
+            itemAdapterViewHolder.tvNome.setTypeface(null, Typeface.BOLD);
             itemAdapterViewHolder.tvSub.setText(favorite.getTvSub());
             itemAdapterViewHolder.tvData.setText(favorite.getTvData());
             if(favorite.getIvImage()!=null){
