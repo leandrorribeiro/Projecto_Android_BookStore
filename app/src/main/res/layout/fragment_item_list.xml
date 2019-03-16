@@ -3,9 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
     <TextView
         android:text="BookStore"
+        android:textStyle="bold"
+        android:textSize="27dp"
         android:textAlignment="center"
         android:layout_width="match_parent"
-        android:layout_height="25dp"/>
+        android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/btn_favorito"
         android:text="Favoritos"

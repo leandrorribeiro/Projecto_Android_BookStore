@@ -1,6 +1,7 @@
 package com.example.projecto_android_leandroribeiro_final.fragment;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
